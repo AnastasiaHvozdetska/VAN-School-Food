@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'CocoGothic';
+  src: url("../fonts/CocoGothic-UltraLight_trial.ttf") format("truetype"); }
+body {
+  font-family: 'Roboto', sans-serif; }
+  body header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    body header .navbar-brand {
+      margin-right: 2rem; }
+    body header .nav {
+      margin-bottom: 30px; }
+    body header .menu-link {
+      font-family: 'Roboto', sans-serif;
+      color: #757575;
+      transition: all .2s linear; }
+      body header .menu-link:hover {
+        color: #fff;
+        background-color: #85c82a; }
+    body header .social-link {
+      padding-right: 0; }
+    body header .header-content {
+      margin-left: 50px; }
+      body header .header-content .display-1 {
+        font-family: 'CocoGothic';
+        font-size: 10em;
+        color: #ff4a08; }
+      body header .header-content p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: #665a56;
+        font-size: 32px;
+        line-height: 42px;
+        position: relative;
+        margin-bottom: 60px; }
+        body header .header-content p::after {
+          content: "";
+          display: block;
+          width: 135px;
+          height: 2px;
+          background-color: #665a56;
+          position: absolute;
+          bottom: -40px;
+          left: 0; }
+      body header .header-content h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        color: #ff4a08;
+        margin: 10px 0; }
+      body header .header-content .btn-choose {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 60px;
+        font-size: 20px;
+        color: #fff;
+        background-color: #ff4a08;
+        transition: all .3s linear; }
+        body header .header-content .btn-choose:hover {
+          background-color: #fff;
+          border: 1px solid #ff4a08;
+          color: #ff4a08;
+          transition: all .3s linear; }
+
+/*# sourceMappingURL=style.css.map */

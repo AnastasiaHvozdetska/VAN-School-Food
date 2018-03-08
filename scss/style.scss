@@ -1,10 +1,28 @@
 @font-face {
 	font-family: 'CocoGothic';
 	src: url("../fonts/CocoGothic-UltraLight_trial.ttf") format('truetype');
+
+	font-family: 'Britannic';
+	src: url("../fonts/Britannic-Bold_Regular.ttf") format('truetype');
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
+	.title {
+		color: #665a56;
+		font-size: 2em;
+		font-weight: 300;
+		position: relative;
+		&::after {
+			content: "";
+			display: block;
+			height: 3px;
+			width: 65px;
+			background-color: #ff4a08;
+			position: absolute;
+			bottom: -10px;
+		}
+	}
 	header {
 		width: 100%;
 		height: 100vh;
@@ -79,6 +97,243 @@ body {
 					color: #ff4a08;
 					transition: all .3s linear;
 				}
+			}
+		}
+	}
+	main {
+		.program {
+			width: 100%;
+			height: 100vh;
+			background-image: url(../imgs/bg-program.jpg);
+			background-size: cover;
+			background-position: center center;
+		}
+		.influence {
+			width: 100%;
+			height: 100vh;
+			background-image: url(../imgs/bg-infl.jpg);
+			background-size: cover;
+			background-position: center center;
+			.title {
+				padding-top: 50px;
+				margin-bottom: 50px;
+			}
+			.icons-icon {
+				padding-bottom: 30px;
+				padding-left: 50px;
+				text-align: center;
+				transition: 1s;
+				height: 200px;
+				img {
+					width: 120px;
+					height: 120px;
+				}
+				&:hover {
+					transform: scale(1.1);
+					transition: 1s;
+				}
+			}
+			.icons-icon__text {
+				font-size: 20px;
+				color: #665a56;
+			}
+		}
+		.choose {
+			width: 100%;
+			height: 400px;
+			background-color: #FF8203;
+			display: flex;
+			align-items: center;
+			.btn-choose {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 60px;
+				margin-top: 50px;
+				color: #fff;
+				font-size: 20px;
+				background-color: #303030;
+				&:hover {
+					border: 1px solid #303030;
+					background-color: #fff;
+					color: #303030;
+				}
+			}
+			h4 {
+				font-weight: 300;
+				font-size: 3em;
+				color: #fff;
+				.hash {
+					color: #ff4a08;
+					font-size: inherit;
+				}
+			}
+			span {
+				color: #303030;
+				font-size: 20px;
+			}
+		}
+		.reviews {
+			width: 100%;
+			height: 520px;
+			background-color: #303030;
+			display: flex;
+			align-items: center;
+			.reviews-title {
+				color: #fff;
+				font-weight: 300;
+				font-size: 2em;
+				position: relative;
+				margin: 30px 0;
+				&::after {
+					content: "";
+					display: block;
+					height: 3px;
+					width: 65px;
+					background-color: #ff4a08;
+					position: absolute;
+					bottom: -10px;
+				}
+			}
+			.slider-item {
+				color: #fff;
+				display: flex;
+				#quotes {
+					font-family: 'Britannic';
+					height: 50px;
+					display: flex;
+					align-items: center;
+					font-size: 4em;
+					padding: 0 10px;
+				}
+				p {
+					color: #b5b5b5;
+				}
+				.name {
+					font-size: 20px;
+				}
+			}
+		}
+		.reasons {
+			width: 100%;
+			height: 100%;
+			background-image: url(../imgs/bg-reasons.jpg);
+			background-size: cover;
+			background-position: center center;
+			.reasons-title {
+				padding-top: 50px;
+				margin-bottom: 50px;
+			}
+			.card {
+				height: 615px;
+				margin-bottom: 20px;
+			}
+			.card-header {
+				height: 210px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #fff;
+				font-weight: 500;
+				font-size: 20px;
+				background-image: url(../imgs/noteapple.png);
+				position: relative;
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					bottom: -30px;
+					right: 20px;
+					border-style: solid;
+					border-width: 30px 20px 0 20px;
+					border-color: #ff5207 transparent transparent transparent;
+				}
+			}
+			.card-4 .card-header {
+				background-image: url(../imgs/phone.png);
+			}
+			.card-2 .card-header {
+				background-image: url(../imgs/price.png);
+			}
+			.card-5 .card-header {
+				background-image: url(../imgs/info.png);
+			}
+			.card-3 .card-header {
+				background-image: url(../imgs/support.png);
+			}
+		}
+	}
+	footer {
+		width: 100%;
+		height: 460px;
+		background-image: url(../imgs/bg-footer.jpg);
+		background-size: cover;
+		padding-top: 50px;
+		.footer-title {
+			color: #fff;
+			font-weight: 400;
+			height: 36px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				margin-right: 10px;
+			}
+		}
+		.contact-content {
+			border-top: 1px solid #ff4a08;
+			padding-top: 20px;
+			.contact {
+				display: block;
+				color: #a1a1a1;
+				font-size: 18px;
+				line-height: 3em;
+				width: 80%;
+				transition: 1s;
+				&:hover {
+					text-decoration: none;
+					transform: translateX(20px);
+					transition: 1s;
+				}
+			}
+			p {
+				color: #fff;
+				font-size: 18px;
+				line-height: 2em;
+				border-top: 1px solid #ff4a08;
+				padding: 10px;
+			}
+			.social {
+				text-align: center;
+				.social-link {
+					padding: 0 10px;
+				}
+			}
+		}
+		.question-content {
+			border-top: 1px solid #ff4a08;
+			padding-top: 20px;
+			p {
+				color: #a1a1a1;
+				font-size: 18px;
+				font-weight: 300;
+			}
+		}
+		.form-content {
+			border-top: 1px solid #ff4a08;
+			padding-top: 20px;
+			.btn-send {
+				background-color: #ff4a08;
+				color: #fff;
+				width: 175px;
+				height: 45px;
+				&:hover {
+					background-color: #fff;
+					color: #ff4a08;
+				}
+			}
+			#area-message {
+				margin-top: -1rem;
 			}
 		}
 	}

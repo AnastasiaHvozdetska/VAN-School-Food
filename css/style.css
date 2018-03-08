@@ -1,8 +1,23 @@
 @font-face {
   font-family: 'CocoGothic';
-  src: url("../fonts/CocoGothic-UltraLight_trial.ttf") format("truetype"); }
+  src: url("../fonts/CocoGothic-UltraLight_trial.ttf") format("truetype");
+  font-family: 'Britannic';
+  src: url("../fonts/Britannic-Bold_Regular.ttf") format("truetype"); }
 body {
   font-family: 'Roboto', sans-serif; }
+  body .title {
+    color: #665a56;
+    font-size: 2em;
+    font-weight: 300;
+    position: relative; }
+    body .title::after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 65px;
+      background-color: #ff4a08;
+      position: absolute;
+      bottom: -10px; }
   body header {
     width: 100%;
     height: 100vh;
@@ -67,5 +82,196 @@ body {
           border: 1px solid #ff4a08;
           color: #ff4a08;
           transition: all .3s linear; }
+  body main .program {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/bg-program.jpg);
+    background-size: cover;
+    background-position: center center; }
+  body main .influence {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/bg-infl.jpg);
+    background-size: cover;
+    background-position: center center; }
+    body main .influence .title {
+      padding-top: 50px;
+      margin-bottom: 50px; }
+    body main .influence .icons-icon {
+      padding-bottom: 30px;
+      padding-left: 50px;
+      text-align: center;
+      transition: 1s;
+      height: 200px; }
+      body main .influence .icons-icon img {
+        width: 120px;
+        height: 120px; }
+      body main .influence .icons-icon:hover {
+        transform: scale(1.1);
+        transition: 1s; }
+    body main .influence .icons-icon__text {
+      font-size: 20px;
+      color: #665a56; }
+  body main .choose {
+    width: 100%;
+    height: 400px;
+    background-color: #FF8203;
+    display: flex;
+    align-items: center; }
+    body main .choose .btn-choose {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      margin-top: 50px;
+      color: #fff;
+      font-size: 20px;
+      background-color: #303030; }
+      body main .choose .btn-choose:hover {
+        border: 1px solid #303030;
+        background-color: #fff;
+        color: #303030; }
+    body main .choose h4 {
+      font-weight: 300;
+      font-size: 3em;
+      color: #fff; }
+      body main .choose h4 .hash {
+        color: #ff4a08;
+        font-size: inherit; }
+    body main .choose span {
+      color: #303030;
+      font-size: 20px; }
+  body main .reviews {
+    width: 100%;
+    height: 520px;
+    background-color: #303030;
+    display: flex;
+    align-items: center; }
+    body main .reviews .reviews-title {
+      color: #fff;
+      font-weight: 300;
+      font-size: 2em;
+      position: relative;
+      margin: 30px 0; }
+      body main .reviews .reviews-title::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 65px;
+        background-color: #ff4a08;
+        position: absolute;
+        bottom: -10px; }
+    body main .reviews .slider-item {
+      color: #fff;
+      display: flex; }
+      body main .reviews .slider-item #quotes {
+        font-family: 'Britannic';
+        height: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 4em;
+        padding: 0 10px; }
+      body main .reviews .slider-item p {
+        color: #b5b5b5; }
+      body main .reviews .slider-item .name {
+        font-size: 20px; }
+  body main .reasons {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/bg-reasons.jpg);
+    background-size: cover;
+    background-position: center center; }
+    body main .reasons .reasons-title {
+      padding-top: 50px;
+      margin-bottom: 50px; }
+    body main .reasons .card {
+      height: 615px;
+      margin-bottom: 20px; }
+    body main .reasons .card-header {
+      height: 210px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      background-image: url(../imgs/noteapple.png);
+      position: relative; }
+      body main .reasons .card-header::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -30px;
+        right: 20px;
+        border-style: solid;
+        border-width: 30px 20px 0 20px;
+        border-color: #ff5207 transparent transparent transparent; }
+    body main .reasons .card-4 .card-header {
+      background-image: url(../imgs/phone.png); }
+    body main .reasons .card-2 .card-header {
+      background-image: url(../imgs/price.png); }
+    body main .reasons .card-5 .card-header {
+      background-image: url(../imgs/info.png); }
+    body main .reasons .card-3 .card-header {
+      background-image: url(../imgs/support.png); }
+  body footer {
+    width: 100%;
+    height: 460px;
+    background-image: url(../imgs/bg-footer.jpg);
+    background-size: cover;
+    padding-top: 50px; }
+    body footer .footer-title {
+      color: #fff;
+      font-weight: 400;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body footer .footer-title img {
+        margin-right: 10px; }
+    body footer .contact-content {
+      border-top: 1px solid #ff4a08;
+      padding-top: 20px; }
+      body footer .contact-content .contact {
+        display: block;
+        color: #a1a1a1;
+        font-size: 18px;
+        line-height: 3em;
+        width: 80%;
+        transition: 1s; }
+        body footer .contact-content .contact:hover {
+          text-decoration: none;
+          transform: translateX(20px);
+          transition: 1s; }
+      body footer .contact-content p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 2em;
+        border-top: 1px solid #ff4a08;
+        padding: 10px; }
+      body footer .contact-content .social {
+        text-align: center; }
+        body footer .contact-content .social .social-link {
+          padding: 0 10px; }
+    body footer .question-content {
+      border-top: 1px solid #ff4a08;
+      padding-top: 20px; }
+      body footer .question-content p {
+        color: #a1a1a1;
+        font-size: 18px;
+        font-weight: 300; }
+    body footer .form-content {
+      border-top: 1px solid #ff4a08;
+      padding-top: 20px; }
+      body footer .form-content .btn-send {
+        background-color: #ff4a08;
+        color: #fff;
+        width: 175px;
+        height: 45px; }
+        body footer .form-content .btn-send:hover {
+          background-color: #fff;
+          color: #ff4a08; }
+      body footer .form-content #area-message {
+        margin-top: -1rem; }
 
 /*# sourceMappingURL=style.css.map */

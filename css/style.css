@@ -1,6 +1,7 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'CocoGothic';
-  src: url("../fonts/CocoGothic-UltraLight_trial.ttf") format("truetype");
+  src: url("../fonts/Coco-Gothic-Ultralight-trial.ttf") format("truetype");
   font-family: 'Britannic';
   src: url("../fonts/Britannic-Bold_Regular.ttf") format("truetype"); }
 body {
@@ -26,7 +27,9 @@ body {
     background-size: cover;
     background-position: center center; }
     body header .navbar-brand {
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      width: 120px;
+      height: 100%; }
     body header .nav {
       margin-bottom: 30px; }
     body header .menu-link {
@@ -37,18 +40,25 @@ body {
         color: #fff;
         background-color: #85c82a; }
     body header .social-link {
-      padding-right: 0; }
+      padding: 0;
+      margin-left: 15px; }
+      body header .social-link:hover .social-icon {
+        fill: #FF4A08; }
+      body header .social-link .social-icon {
+        width: 35px;
+        height: 35px;
+        fill: #6c6c6c; }
     body header .header-content {
       margin-left: 50px; }
-      body header .header-content .display-1 {
-        font-family: 'CocoGothic';
+      body header .header-content h1 {
+        font-family: 'CocoGothic', sans-serif;
         font-size: 10em;
         color: #ff4a08; }
       body header .header-content p {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         color: #665a56;
-        font-size: 32px;
+        font-size: 28px;
         line-height: 42px;
         position: relative;
         margin-bottom: 60px; }
@@ -87,7 +97,118 @@ body {
     height: 100vh;
     background-image: url(../imgs/bg-program.jpg);
     background-size: cover;
-    background-position: center center; }
+    background-position: center center;
+    overflow: hidden; }
+    body main .program h3 {
+      color: #ff4a08;
+      margin-top: 50px; }
+    body main .program p {
+      color: #665a56;
+      font-weight: 300;
+      font-size: 28px; }
+    body main .program .circle-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; }
+      body main .program .circle-wrapper .circle {
+        position: relative; }
+        body main .program .circle-wrapper .circle .circle-girl {
+          width: 400px;
+          height: 400px; }
+        body main .program .circle-wrapper .circle .circle-link {
+          position: absolute; }
+          body main .program .circle-wrapper .circle .circle-link:hover span {
+            transition: .2s; }
+          body main .program .circle-wrapper .circle .circle-link:hover span::after {
+            content: "БОЛЬШЕ \00BB";
+            display: block;
+            font-size: 16px;
+            line-height: 2em;
+            color: #ff4a08;
+            text-align: center;
+            transition: .2s; }
+          body main .program .circle-wrapper .circle .circle-link span {
+            position: absolute;
+            z-index: 20;
+            color: #5e5e5e;
+            font-size: 18px;
+            width: 170px;
+            transition: .2s; }
+        body main .program .circle-wrapper .circle #link-1 {
+          top: -11%;
+          left: -60%; }
+          body main .program .circle-wrapper .circle #link-1 span {
+            top: 100px;
+            left: 75px; }
+        body main .program .circle-wrapper .circle #link-2 {
+          top: -56%;
+          left: -20.5%; }
+          body main .program .circle-wrapper .circle #link-2 span {
+            top: 120px;
+            left: 90px; }
+        body main .program .circle-wrapper .circle #link-3 {
+          top: -60.1%;
+          left: 40%; }
+          body main .program .circle-wrapper .circle #link-3 span {
+            top: 150px;
+            left: 90px; }
+        body main .program .circle-wrapper .circle #link-4 {
+          top: -20.2%;
+          left: 84.7%; }
+          body main .program .circle-wrapper .circle #link-4 span {
+            top: 160px;
+            left: 85px; }
+        body main .program .circle-wrapper .circle #link-5 {
+          top: 39.5%;
+          left: 88.3%; }
+          body main .program .circle-wrapper .circle #link-5 span {
+            top: 120px;
+            left: 70px; }
+        body main .program .circle-wrapper .circle #link-6 {
+          top: 84.5%;
+          left: 48.5%; }
+          body main .program .circle-wrapper .circle #link-6 span {
+            top: 120px;
+            left: 50px; }
+        body main .program .circle-wrapper .circle #link-7 {
+          top: 88.5%;
+          left: -11.5%; }
+          body main .program .circle-wrapper .circle #link-7 span {
+            top: 90px;
+            left: 40px; }
+        body main .program .circle-wrapper .circle #link-8 {
+          top: 48.5%;
+          left: -226px; }
+          body main .program .circle-wrapper .circle #link-8 span {
+            top: 75px;
+            left: 40px; }
+        body main .program .circle-wrapper .circle .segment {
+          height: 287px;
+          width: 287px;
+          position: absolute;
+          --primary-color: #f6f8fa;
+          --secondary-color: #edf3f3; }
+          body main .program .circle-wrapper .circle .segment use:hover {
+            cursor: pointer;
+            --secondary-color: #ff4a08;
+            color: red; }
+        body main .program .circle-wrapper .circle #segment1 {
+          transform: rotate(-44deg); }
+        body main .program .circle-wrapper .circle #segment2 {
+          transform: rotate(1deg); }
+        body main .program .circle-wrapper .circle #segment3 {
+          transform: rotate(47deg); }
+        body main .program .circle-wrapper .circle #segment4 {
+          transform: rotate(92deg); }
+        body main .program .circle-wrapper .circle #segment5 {
+          transform: rotate(136deg); }
+        body main .program .circle-wrapper .circle #segment6 {
+          transform: rotate(182deg); }
+        body main .program .circle-wrapper .circle #segment7 {
+          transform: rotate(-134deg); }
+        body main .program .circle-wrapper .circle #segment8 {
+          transform: rotate(-88deg); }
   body main .influence {
     width: 100%;
     height: 100vh;
@@ -164,7 +285,7 @@ body {
     body main .reviews .slider-item {
       color: #fff;
       display: flex; }
-      body main .reviews .slider-item #quotes {
+      body main .reviews .slider-item .quotes {
         font-family: 'Britannic';
         height: 50px;
         display: flex;
@@ -188,38 +309,41 @@ body {
       height: 615px;
       margin-bottom: 20px; }
     body main .reasons .card-header {
+      padding-top: 130px;
+      padding-left: 150px;
       height: 210px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       color: #fff;
       font-weight: 500;
       font-size: 20px;
-      background-image: url(../imgs/noteapple.png);
-      position: relative; }
+      position: relative;
+      background-image: url(../svg/bg-icon.svg);
+      background-size: cover; }
       body main .reasons .card-header::after {
         content: "";
         display: block;
         position: absolute;
-        bottom: -30px;
-        right: 20px;
+        bottom: -29px;
+        right: 60px;
         border-style: solid;
-        border-width: 30px 20px 0 20px;
+        border-width: 30px 25px 0 25px;
         border-color: #ff5207 transparent transparent transparent; }
-    body main .reasons .card-4 .card-header {
-      background-image: url(../imgs/phone.png); }
-    body main .reasons .card-2 .card-header {
-      background-image: url(../imgs/price.png); }
-    body main .reasons .card-5 .card-header {
-      background-image: url(../imgs/info.png); }
-    body main .reasons .card-3 .card-header {
-      background-image: url(../imgs/support.png); }
+      body main .reasons .card-header .card-icon {
+        width: 100px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px; }
+    body main .reasons .card-body {
+      background-color: #f6f8fa; }
   body footer {
     width: 100%;
     height: 460px;
     background-image: url(../imgs/bg-footer.jpg);
     background-size: cover;
     padding-top: 50px; }
+    body footer .footer-logo_link {
+      width: 80px;
+      height: 100px;
+      display: block; }
     body footer .footer-title {
       color: #fff;
       font-weight: 400;
@@ -227,7 +351,8 @@ body {
       display: flex;
       justify-content: center;
       align-items: center; }
-      body footer .footer-title img {
+      body footer .footer-title .title-icon {
+        width: 30px;
         margin-right: 10px; }
     body footer .contact-content {
       border-top: 1px solid #ff4a08;
@@ -250,9 +375,16 @@ body {
         border-top: 1px solid #ff4a08;
         padding: 10px; }
       body footer .contact-content .social {
-        text-align: center; }
+        display: flex;
+        justify-content: center; }
         body footer .contact-content .social .social-link {
-          padding: 0 10px; }
+          margin: 0 10px; }
+          body footer .contact-content .social .social-link:hover .social-icon {
+            fill: #FF4A08; }
+          body footer .contact-content .social .social-link .social-icon {
+            width: 35px;
+            height: 35px;
+            fill: #fff; }
     body footer .question-content {
       border-top: 1px solid #ff4a08;
       padding-top: 20px; }

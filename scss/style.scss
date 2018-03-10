@@ -1,11 +1,10 @@
 @font-face {
 	font-family: 'CocoGothic';
-	src: url("../fonts/CocoGothic-UltraLight_trial.ttf") format('truetype');
+	src: url("../fonts/Coco-Gothic-Ultralight-trial.ttf") format('truetype');
 
 	font-family: 'Britannic';
 	src: url("../fonts/Britannic-Bold_Regular.ttf") format('truetype');
 }
-
 body {
 	font-family: 'Roboto', sans-serif;
 	.title {
@@ -32,6 +31,8 @@ body {
 		background-position: center center;
 		.navbar-brand {
 			margin-right: 2rem;
+			width: 120px;
+			height: 100%;
 		}
 		.nav {
 			margin-bottom: 30px;
@@ -46,12 +47,22 @@ body {
 			}
 		}
 		.social-link {
-			padding-right: 0;
+			padding: 0;
+			margin-left: 15px;
+			&:hover .social-icon {
+				fill: #FF4A08;
+				;
+			}
+			.social-icon {
+				width: 35px;
+				height: 35px;
+				fill: #6c6c6c;
+			}
 		}
 		.header-content {
 			margin-left: 50px;
-			.display-1 {
-				font-family: 'CocoGothic';
+			h1 {
+				font-family: 'CocoGothic', sans-serif;
 				font-size: 10em;
 				color: #ff4a08;
 			}
@@ -59,7 +70,7 @@ body {
 				font-family: 'Roboto', sans-serif;
 				font-weight: 300;
 				color: #665a56;
-				font-size: 32px;
+				font-size: 28px;
 				line-height: 42px;
 				position: relative;
 				margin-bottom: 60px;
@@ -107,6 +118,152 @@ body {
 			background-image: url(../imgs/bg-program.jpg);
 			background-size: cover;
 			background-position: center center;
+			overflow: hidden;
+			h3 {
+				color: #ff4a08;
+				margin-top: 50px;
+			}
+			p {
+				color: #665a56;
+				font-weight: 300;
+				font-size: 28px;
+			}
+			.circle-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				.circle {
+					position: relative;
+					.circle-girl {
+						width: 400px;
+						height: 400px;
+					}
+					.circle-link {
+						position: absolute;
+						&:hover span {
+							transition: .2s;
+						}
+						&:hover span::after {
+							content: "БОЛЬШЕ \00BB";
+							display: block;
+							font-size: 16px;
+							line-height: 2em;
+							color: #ff4a08;
+							text-align: center;
+							transition: .2s;
+						}
+						span {
+							position: absolute;
+							z-index: 20;
+							color: #5e5e5e;
+							font-size: 18px;
+							width: 170px;
+							transition: .2s;
+						}
+					}
+					#link-1 {
+						top: -11%;
+						left: -60%;
+						span {
+							top: 100px;
+							left: 75px;
+						}
+					}
+					#link-2 {
+						top: -56%;
+						left: -20.5%;
+						span {
+							top: 120px;
+							left: 90px;
+						}
+					}
+					#link-3 {
+						top: -60.1%;
+						left: 40%;
+						span {
+							top: 150px;
+							left: 90px;
+						}
+					}
+					#link-4 {
+						top: -20.2%;
+						left: 84.7%;
+						span {
+							top: 160px;
+							left: 85px;
+						}
+					}
+					#link-5 {
+						top: 39.5%;
+						left: 88.3%;
+						span {
+							top: 120px;
+							left: 70px;
+						}
+					}
+					#link-6 {
+						top: 84.5%;
+						left: 48.5%;
+						span {
+							top: 120px;
+							left: 50px;
+						}
+					}
+					#link-7 {
+						top: 88.5%;
+						left: -11.5%;
+						span {
+							top: 90px;
+							left: 40px;
+						}
+					}
+					#link-8 {
+						top: 48.5%;
+						left: -226px;
+						span {
+							top: 75px;
+							left: 40px;
+						}
+					}
+					.segment {
+						height: 287px;
+						width: 287px;
+						position: absolute;
+						--primary-color: #f6f8fa;
+						--secondary-color: #edf3f3;
+						use:hover {
+							cursor: pointer;
+							--secondary-color: #ff4a08;
+							color: red;
+						}
+					}
+					#segment1 {
+						transform: rotate(-44deg);
+					}
+					#segment2 {
+						transform: rotate(1deg);
+					}
+					#segment3 {
+						transform: rotate(47deg);
+					}
+					#segment4 {
+						transform: rotate(92deg);
+					}
+					#segment5 {
+						transform: rotate(136deg);
+					}
+					#segment6 {
+						transform: rotate(182deg);
+					}
+					#segment7 {
+						transform: rotate(-134deg);
+					}
+					#segment8 {
+						transform: rotate(-88deg);
+					}
+				}
+			}
 		}
 		.influence {
 			width: 100%;
@@ -198,7 +355,7 @@ body {
 			.slider-item {
 				color: #fff;
 				display: flex;
-				#quotes {
+				.quotes {
 					font-family: 'Britannic';
 					height: 50px;
 					display: flex;
@@ -229,37 +386,34 @@ body {
 				margin-bottom: 20px;
 			}
 			.card-header {
+				padding-top: 130px;
+				padding-left: 150px;
 				height: 210px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
 				color: #fff;
 				font-weight: 500;
 				font-size: 20px;
-				background-image: url(../imgs/noteapple.png);
 				position: relative;
+				background-image: url(../svg/bg-icon.svg);
+				background-size: cover;
 				&::after {
 					content: "";
 					display: block;
 					position: absolute;
-					bottom: -30px;
-					right: 20px;
+					bottom: -29px;
+					right: 60px;
 					border-style: solid;
-					border-width: 30px 20px 0 20px;
+					border-width: 30px 25px 0 25px;
 					border-color: #ff5207 transparent transparent transparent;
 				}
+				.card-icon {
+					width: 100px;
+					position: absolute;
+					left: 20px;
+					bottom: 20px;
+				}
 			}
-			.card-4 .card-header {
-				background-image: url(../imgs/phone.png);
-			}
-			.card-2 .card-header {
-				background-image: url(../imgs/price.png);
-			}
-			.card-5 .card-header {
-				background-image: url(../imgs/info.png);
-			}
-			.card-3 .card-header {
-				background-image: url(../imgs/support.png);
+			.card-body {
+				background-color: #f6f8fa;
 			}
 		}
 	}
@@ -269,6 +423,11 @@ body {
 		background-image: url(../imgs/bg-footer.jpg);
 		background-size: cover;
 		padding-top: 50px;
+		.footer-logo_link {
+			width: 80px;
+			height: 100px;
+			display: block;
+		}
 		.footer-title {
 			color: #fff;
 			font-weight: 400;
@@ -276,7 +435,8 @@ body {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			img {
+			.title-icon {
+				width: 30px;
 				margin-right: 10px;
 			}
 		}
@@ -304,9 +464,18 @@ body {
 				padding: 10px;
 			}
 			.social {
-				text-align: center;
+				display: flex;
+				justify-content: center;
 				.social-link {
-					padding: 0 10px;
+					margin: 0 10px;
+					&:hover .social-icon {
+						fill: #FF4A08;
+					}
+					.social-icon {
+						width: 35px;
+						height: 35px;
+						fill: #fff;
+					}
 				}
 			}
 		}

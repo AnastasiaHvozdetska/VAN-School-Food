@@ -1,8 +1,5 @@
 @charset "UTF-8";
 /* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
-
 /* Icons */
 @font-face {
   font-family: "slick";
@@ -117,7 +114,7 @@
         width: 20px;
         height: 20px;
         font-family: "slick";
-        font-size: 15px;
+        font-size: 7px;
         line-height: 20px;
         text-align: center;
         color: white;

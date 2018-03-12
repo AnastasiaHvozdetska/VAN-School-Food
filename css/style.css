@@ -114,8 +114,8 @@ body {
       body main .program .circle-wrapper .circle {
         position: relative; }
         body main .program .circle-wrapper .circle .circle-girl {
-          width: 400px;
-          height: 400px; }
+          width: 350px;
+          height: 350px; }
         body main .program .circle-wrapper .circle .circle-link {
           position: absolute; }
           body main .program .circle-wrapper .circle .circle-link:hover span {
@@ -123,7 +123,7 @@ body {
           body main .program .circle-wrapper .circle .circle-link:hover span::after {
             content: "БОЛЬШЕ \00BB";
             display: block;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 2em;
             color: #ff4a08;
             text-align: center;
@@ -132,26 +132,26 @@ body {
             position: absolute;
             z-index: 20;
             color: #5e5e5e;
-            font-size: 18px;
-            width: 170px;
+            font-size: 16px;
+            width: 150px;
             transition: .2s; }
         body main .program .circle-wrapper .circle #link-1 {
           top: -11%;
           left: -60%; }
           body main .program .circle-wrapper .circle #link-1 span {
             top: 100px;
-            left: 75px; }
+            left: 60px; }
         body main .program .circle-wrapper .circle #link-2 {
           top: -56%;
           left: -20.5%; }
           body main .program .circle-wrapper .circle #link-2 span {
-            top: 120px;
+            top: 90px;
             left: 90px; }
         body main .program .circle-wrapper .circle #link-3 {
           top: -60.1%;
           left: 40%; }
           body main .program .circle-wrapper .circle #link-3 span {
-            top: 150px;
+            top: 110px;
             left: 90px; }
         body main .program .circle-wrapper .circle #link-4 {
           top: -20.2%;
@@ -164,12 +164,12 @@ body {
           left: 88.3%; }
           body main .program .circle-wrapper .circle #link-5 span {
             top: 120px;
-            left: 70px; }
+            left: 60px; }
         body main .program .circle-wrapper .circle #link-6 {
           top: 84.5%;
           left: 48.5%; }
           body main .program .circle-wrapper .circle #link-6 span {
-            top: 120px;
+            top: 105px;
             left: 50px; }
         body main .program .circle-wrapper .circle #link-7 {
           top: 88.5%;
@@ -179,13 +179,13 @@ body {
             left: 40px; }
         body main .program .circle-wrapper .circle #link-8 {
           top: 48.5%;
-          left: -226px; }
+          left: -197px; }
           body main .program .circle-wrapper .circle #link-8 span {
             top: 75px;
             left: 40px; }
         body main .program .circle-wrapper .circle .segment {
-          height: 287px;
-          width: 287px;
+          height: 250px;
+          width: 250px;
           position: absolute;
           --primary-color: #f6f8fa;
           --secondary-color: #edf3f3; }

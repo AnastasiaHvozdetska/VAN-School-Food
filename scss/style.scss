@@ -136,8 +136,8 @@ body {
 				.circle {
 					position: relative;
 					.circle-girl {
-						width: 400px;
-						height: 400px;
+						width: 350px;
+						height: 350px;
 					}
 					.circle-link {
 						position: absolute;
@@ -147,7 +147,7 @@ body {
 						&:hover span::after {
 							content: "БОЛЬШЕ \00BB";
 							display: block;
-							font-size: 16px;
+							font-size: 14px;
 							line-height: 2em;
 							color: #ff4a08;
 							text-align: center;
@@ -157,8 +157,8 @@ body {
 							position: absolute;
 							z-index: 20;
 							color: #5e5e5e;
-							font-size: 18px;
-							width: 170px;
+							font-size: 16px;
+							width: 150px;
 							transition: .2s;
 						}
 					}
@@ -167,14 +167,14 @@ body {
 						left: -60%;
 						span {
 							top: 100px;
-							left: 75px;
+							left: 60px;
 						}
 					}
 					#link-2 {
 						top: -56%;
 						left: -20.5%;
 						span {
-							top: 120px;
+							top: 90px;
 							left: 90px;
 						}
 					}
@@ -182,7 +182,7 @@ body {
 						top: -60.1%;
 						left: 40%;
 						span {
-							top: 150px;
+							top: 110px;
 							left: 90px;
 						}
 					}
@@ -199,14 +199,14 @@ body {
 						left: 88.3%;
 						span {
 							top: 120px;
-							left: 70px;
+							left: 60px;
 						}
 					}
 					#link-6 {
 						top: 84.5%;
 						left: 48.5%;
 						span {
-							top: 120px;
+							top: 105px;
 							left: 50px;
 						}
 					}
@@ -220,15 +220,15 @@ body {
 					}
 					#link-8 {
 						top: 48.5%;
-						left: -226px;
+						left: -197px;
 						span {
 							top: 75px;
 							left: 40px;
 						}
 					}
 					.segment {
-						height: 287px;
-						width: 287px;
+						height: 250px;
+						width: 250px;
 						position: absolute;
 						--primary-color: #f6f8fa;
 						--secondary-color: #edf3f3;

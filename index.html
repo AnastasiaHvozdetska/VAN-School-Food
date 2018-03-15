@@ -3,15 +3,17 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>VAN</title>
-	<link rel="stylesheet" href="./css/normalize.css">
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/slick.css">
-	<link rel="stylesheet" href="./css/slick-theme.css">
+	<link rel="stylesheet" href="./src/css/normalize.css">
+	<link rel="stylesheet" href="./src/css/media-screens.css">
+	<link rel="stylesheet" href="./src/css/style.css">
+	<link rel="stylesheet" href="./src/css/slick.css">
+	<link rel="stylesheet" href="./src/css/slick-theme.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
 </head>
 
 <body>
@@ -48,44 +50,52 @@
 	</svg>
 	<header>
 		<div class="container">
-			<nav class="navbar">
-				<a href="#" class="navbar-brand"><img src="./svg/logo.svg" alt="" class="img-fluid"></a>
-				<ul class="nav mr-auto">
-					<li class="nav-item">
-						<a href="#" class="nav-link menu-link text-uppercase">Личный кабинет</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link menu-link text-uppercase">Программы питания</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link menu-link text-uppercase">О нас</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link menu-link text-uppercase">Новости</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link menu-link text-uppercase">Контакты</a>
-					</li>
-				</ul>
-				<ul class="nav social">
-					<li class="nav-item">
-						<a href="#" class="nav-link social-link">
+			<nav class="navbar navbar-inverse navbar-expand-md">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand"><img src="./src/svg/logo.svg" alt="" class="img-fluid"></a>
+				</div>
+				<button class="navbar-toggler pull-md-left" type="button" data-toggle="collapse" data-target="#navbar-menu">
+   					<span class="navbar-toggler-icon"></span>
+ 				</button>
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link menu-link text-uppercase">Личный кабинет</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link menu-link text-uppercase">Главная</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link menu-link text-uppercase">Программы питания</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link menu-link text-uppercase">О нас</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link menu-link text-uppercase">Новости</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link menu-link text-uppercase">Контакты</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link social-link">
 							<svg class="facebook social-icon">
 								<use xlink:href="#facebook"></use>
 							</svg>
 						</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link social-link">
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link social-link">
 							<svg class="instagram social-icon">
 								<use xlink:href="#instagram"></use>
 							</svg>
 						</a>
-					</li>
-				</ul>
+						</li>
+					</ul>
+				</div>
 			</nav>
-			<div class="row">
-				<div class="col-5 header-content">
+				<div class="row">
+				<div class="col-lg-5 col-xs-1 header-content">
 					<h1 class="text-uppercase">Да</h1>
 					<p class="text-uppercase">Теперь можно питаться вкусно и правильно. Ведь теперь есть VAN!</p>
 					<h3 class="text-uppercase">Питаться правильно. Питаться с van</h3>
@@ -94,7 +104,7 @@
 			</div>
 		</div>
 	</header>
-	<main>
+	<main>	
 		<section class="program">
 			<div class="container">
 				<div class="row">
@@ -105,7 +115,7 @@
 					<div class="col">
 						<div class="circle-wrapper">
 							<div class="circle">
-								<img src="./imgs/girl.png" alt="" class="img-fluid circle-girl">
+								<img src="./src/imgs/girl.png" alt="" class="img-fluid circle-girl">
 								<a href="#" class="circle-link" id="link-1">
 									<span>Индивидуальная</span>
 										<svg class="segment" id="segment1" overflow="visible">
@@ -164,43 +174,43 @@
 			<div class="container">
 				<h3 class="display-4 text-uppercase title influence-title">Правильное питание влияет на:</h3>
 				<div class="row icons justify-content-center">
-					<div class="col-3">
+					<div class="col-lg-3 col-md-4 col-6">
 						<div class="icons-icon">
-							<img src="./svg/icon1.svg" alt="" class="img-fluid">
+							<img src="./src/svg/icon1.svg" alt="" class="img-fluid">
 							<div class="icons-icon__text">Самочуствие и настроение</div>
 						</div>
 						<div class="icons-icon">
-							<img src="./svg/icon2.svg" alt="" class="img-fluid">
+							<img src="./src/svg/icon2.svg" alt="" class="img-fluid">
 							<div class="icons-icon__text">Состояние кожи, волос и ногтей</div>
 						</div>
 					</div>
-					<div class="col-3">
+					<div class="col-lg-3 col-md-4 col-6">
 						<div class="icons-icon">
-							<img src="./svg/icon3.svg" alt="" class="img-fluid">
+							<img src="./src/svg/icon3.svg" alt="" class="img-fluid">
 							<div class="icons-icon__text" style="color:#ff8203">Физическую активность</div>
 						</div>
 						<div class="icons-icon">
-							<img src="./svg/icon4.svg" alt="" class="img-fluid">
+							<img src="./src/svg/icon4.svg" alt="" class="img-fluid">
 							<div class="icons-icon__text">Состояние зубов и костей</div>
 						</div>
 					</div>
-					<div class="col-3">
+					<div class="col-lg-3 col-md-4 col-6">
 						<div class="icons-icon">
-							<img src="./svg/icon5.svg" alt="" class="img-fluid">
+							<img src="./src/svg/icon5.svg" alt="" class="img-fluid">
 							<div class="icons-icon__text">Мышление и память</div>
 						</div>
 						<div class="icons-icon">
-							<img src="./svg/icon6.svg" alt="" class="img-fluid">
+							<img src="./src/svg/icon6.svg" alt="" class="img-fluid">
 							<div class="icons-icon__text">Здоровье и иммунитет</div>
 						</div>
 					</div>
-					<div class="col-3">
+					<div class="col-lg-3 col-md-4 col-6">
 						<div class="icons-icon">
-							<img src="./svg/icon7.svg" alt="" class="img-fluid">
+							<img src="./src/svg/icon7.svg" alt="" class="img-fluid">
 							<div class="icons-icon__text">Качество сна</div>
 						</div>
 						<div class="icons-icon">
-							<img src="./svg/icon8.svg" alt="" class="img-fluid">
+							<img src="./src/svg/icon8.svg" alt="" class="img-fluid">
 							<div class="icons-icon__text">Фигуру</div>
 						</div>
 					</div>
@@ -210,11 +220,11 @@
 		<section class="choose">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-3">
+					<div class="col-lg-3 col-xs-3">
 						<h4 class="text-uppercase">Шаг<span class="hash">#</span>1</h4>
 						<span>Выбрать программу</span>
 					</div>
-					<div class="col-3 text-right">
+					<div class="col-lg-3 col-xs-3 text-right">
 						<h4 class="text-uppercase">Шаг<span class="hash">#</span>2</h4>
 						<span>Быть здоровым</span>
 					</div>
@@ -321,7 +331,7 @@
 					<div class="col-4">
 						<div class="card card-1">
 							<h3 class="card-header text-uppercase">
-								<img src="./svg/comfort.svg" alt="" class="card-icon">Комфорт</h3>
+								<img src="./src/svg/comfort.svg" alt="" class="card-icon">Комфорт</h3>
 							<div class="card-body">
 								<p class="card-text">
 									Мы составим программу питания под нужды каждого потребителя. Вам не нужно будет каждый день искать рецепты и вести подсчет жиров, белков, углеводов и всех необходимых микроэлементов. Мы будем напоминать Вам о времени приготовлении пищи и тренировках. Вы сможете связаться с личным диетологом в удобное время и получить ответы на любые вопросы.
@@ -330,7 +340,7 @@
 						</div>
 						<div class="card card-4">
 							<h3 class="card-header text-uppercase">
-								<img src="./svg/online-icon.svg" alt="" class="card-icon">Онлайн</h3>
+								<img src="./src/svg/online-icon.svg" alt="" class="card-icon">Онлайн</h3>
 							<div class="card-body">
 								<p class="card-text">
 									Вам не нужно постоянно ездить на консультацию к Вашему диетологу. Ведь мы будем всегда рядом у Вас в смартфоне. В личном кабинете за Вами будет закреплен личный диетолог, связь с которым будет доступна 24/7.
@@ -341,7 +351,7 @@
 					<div class="col-4">
 						<div class="card card-2">
 							<h3 class="card-header text-uppercase">
-								<img src="./svg/price-icon.svg" alt="" class="card-icon">Цена</h3>
+								<img src="./src/svg/price-icon.svg" alt="" class="card-icon">Цена</h3>
 							<div class="card-body">
 								<p class="card-text">
 									Стоимость программы ниже, чем если бы Вы обращались за услугами отдельно к диетологу и отдельно к тренеру. Более того, поддержка диетолога присутствует во все время длительности программы и нет нужды каждый раз платить за консультации.
@@ -350,7 +360,7 @@
 						</div>
 						<div class="card card-5">
 							<h3 class="card-header text-uppercase">
-								<img src="./svg/voice.svg" alt="" class="card-icon">Информация</h3>
+								<img src="./src/svg/voice.svg" alt="" class="card-icon">Информация</h3>
 							<div class="card-body">
 								<p class="card-text">
 									Мы постоянно проводим семинары и тренинги в области здорового питания, ведь очень хотим чтоб наша нация была сильной, крепкой и здоровой!
@@ -361,7 +371,7 @@
 					<div class="col-4">
 						<div class="card card-3">
 							<h3 class="card-header text-uppercase">
-								<img src="./svg/support-icon.svg" alt="" class="card-icon">Поддержка</h3>
+								<img src="./src/svg/support-icon.svg" alt="" class="card-icon">Поддержка</h3>
 							<div class="card-body">
 								<p class="card-text">
 									Мы знаем, как важно, чтоб во время смены привычек, нас кто-то поддержал. Поэтому Вы всегда сможете написать диетологу- психологу и получить квалифицированный совет.
@@ -377,11 +387,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-2">
-					<a href="#" class="footer-logo_link"><img src="./imgs/VAN_logo_white.png" alt="" class="img-fluid"></a>
+					<a href="#" class="footer-logo_link"><img src="./src/imgs/VAN_logo_white.png" alt="" class="img-fluid"></a>
 				</div>
 				<div class="col">
 					<h5 class="text-uppercase footer-title">
-						<img src="./svg/phone.svg" alt="" class="img-fluid title-icon"> Контакты
+						<img src="./src/svg/phone.svg" alt="" class="img-fluid title-icon"> Контакты
 					</h5>
 					<div class="contact-content">
 						<a href="mailto:pp.school.van@gmail.com" class="footer-mail contact">pp.school.van@gmail.com</a>
@@ -403,7 +413,7 @@
 				</div>
 				<div class="col">
 					<h5 class="text-uppercase footer-title">
-						<img src="./svg/help.svg" alt="" class="img-fluid title-icon"> Вопросы-ответы
+						<img src="./src/svg/help.svg" alt="" class="img-fluid title-icon"> Вопросы-ответы
 					</h5>
 					<div class="question-content">
 						<p>Можно ли тренироваться, если есть ограничения по здоровью?</p>
@@ -414,7 +424,7 @@
 				</div>
 				<div class="col">
 					<h5 class="text-uppercase footer-title">
-						<img src="./svg/email.svg" alt="" class="img-fluid title-icon"> Напишите нам
+						<img src="./src/svg/email.svg" alt="" class="img-fluid title-icon"> Напишите нам
 					</h5>
 					<div class="form-content">
 						<form action="pp.school.van@gmail.com">
@@ -444,7 +454,7 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	<script src="./js/slick.min.js"></script>
+	<script src="./src/js/slick.min.js"></script>
 
 	<script>
 		$(document).ready(function() {
@@ -453,7 +463,9 @@
 				dots: true,
 				arrows: false,
 				slidesToShow: 3,
-				slidesToScroll: 3
+				slidesToScroll: 3,
+				autoplay: true,
+				autoplaySpeed: 2000,
 			});
 		});
 	</script>

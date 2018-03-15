@@ -1,7 +1,6 @@
 @charset "UTF-8";
+@import url(../scss/media-screens.scss);
 @font-face {
-  font-family: 'CocoGothic';
-  src: url("../fonts/Coco-Gothic-Ultralight-trial.ttf") format("truetype");
   font-family: 'Britannic';
   src: url("../fonts/Britannic-Bold_Regular.ttf") format("truetype"); }
 body {
@@ -30,18 +29,50 @@ body {
       margin-right: 2rem;
       width: 120px;
       height: 100%; }
-    body header .nav {
-      margin-bottom: 30px; }
+    body header .navbar-nav {
+      margin-bottom: 20px; }
+    body header .navbar-toggler-icon {
+      width: 30px;
+      height: 3px;
+      background-color: green;
+      position: relative; }
+      body header .navbar-toggler-icon::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        background-color: green;
+        top: 10px; }
+      body header .navbar-toggler-icon::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        background-color: green;
+        bottom: 10px; }
+    body header .nav-item:nth-last-child(2) {
+      margin-left: 100px; }
+    body header .nav-item:first-child {
+      background-color: #85c82a; }
     body header .menu-link {
       font-family: 'Roboto', sans-serif;
       color: #757575;
-      transition: all .2s linear; }
-      body header .menu-link:hover {
-        color: #fff;
-        background-color: #85c82a; }
+      position: relative; }
+      body header .menu-link::after {
+        content: "";
+        display: none;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: 24px; }
+    body header .menu-link:hover::after {
+      display: block; }
     body header .social-link {
-      padding: 0;
-      margin-left: 15px; }
+      padding: 0; }
       body header .social-link:hover .social-icon {
         fill: #FF4A08; }
       body header .social-link .social-icon {
@@ -51,7 +82,7 @@ body {
     body header .header-content {
       margin-left: 50px; }
       body header .header-content h1 {
-        font-family: 'CocoGothic', sans-serif;
+        font-weight: 100;
         font-size: 10em;
         color: #ff4a08; }
       body header .header-content p {
@@ -222,14 +253,17 @@ body {
       padding-bottom: 30px;
       padding-left: 50px;
       text-align: center;
-      transition: 1s;
-      height: 200px; }
+      transition: 1s linear;
+      height: 200px;
+      width: 200px;
+      backface-visibility: hidden; }
       body main .influence .icons-icon img {
         width: 120px;
         height: 120px; }
       body main .influence .icons-icon:hover {
         transform: scale(1.1);
-        transition: 1s; }
+        transition: 1s linear;
+        backface-visibility: hidden; }
     body main .influence .icons-icon__text {
       font-size: 20px;
       color: #665a56; }
